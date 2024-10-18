@@ -1,0 +1,16 @@
+{% extends 'NewOrleans/base.html' %}
+{% load static %}
+
+{% block title %}Submit Your Happy Place{% endblock %}
+
+{% block content %}
+<div class="fun_container">
+    <h2>Welcome to the Fun Page!</h2>
+    <p id="intro">We want to know what your favorite place in New Orleans is! Please provide a value for the fields below!</p>
+    <form method="post"> <!--defines an HTML form element with a method attribute set to post. This uses HTTP post to submit data when user clicks submit-->
+        {% csrf_token %} <!--this token protects form from attacks by ensuring form is coming from a trusted source-->
+        {{ form.as_p }} <!--renders the form fields as HTML <p> elements-->
+        <button type="submit">Submit</button> <!--defines button element that users click to submit form-->
+    </form>
+</div>
+{% endblock %}

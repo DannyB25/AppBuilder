@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}The Big Easy{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/nola.css' %}">
+    <script src="{% static 'js/nawlins.js' %}"></script>
+</head>
+
+<body class="{% block body_class %}middle{% endblock %}">
+    <nav class="navbar">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'history' %}">History</a>
+        <a href="{% url 'food' %}">Hospitality</a>
+        <a href="{% url 'fun' %}">Fun</a>
+        <a href="{% url 'retro' %}">Retrospective</a>
+    </nav>
+
+
+    <div>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+        <div class="hover_container">
+        <p class="aware">Created by Dan Brion 2024</p>
+        <p class="unaware">Les Bon Temps Rouler!</p>
+        </div>
+    </footer>
+</body>
+</html>

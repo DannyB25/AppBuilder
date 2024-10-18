@@ -1,0 +1,19 @@
+{% extends 'NewOrleans/base.html' %}
+{% load static %}
+
+{% block title %}Edit Page{% endblock %}
+
+{% block content %}
+    <div class="change_container">
+        <h1>Edit Page</h1>
+    <form method="POST" id="edit-form">
+        {% csrf_token %}
+        {{ form.as_p }} <!--Renders forms fields-->
+        <button type="submit" id="save-button">Save</button> <!--Save button-->
+        <button type="submit" name="delete" id="delete-button">Delete</button> <!--Delete button-->
+    </form>
+    <a href="{% url 'details' pk=place.pk %}">Cancel</a> <!--Cancel link to return to details page-->
+    </div>
+
+
+{% endblock %}

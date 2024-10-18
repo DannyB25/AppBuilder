@@ -1,0 +1,20 @@
+{% extends 'NewOrleans/base.html' %}
+{% load static %}
+
+{% block title %}NOLA{% endblock %}
+
+{% block content %}
+<div class="corner-image left">
+    <img id="image1" src="{% static 'images/confetti.jpg' %}" alt="Left Image 1">
+    <img id="image2" src="{% static 'images/confetti2.jpg' %}" alt="Left Image 2">
+</div>
+ <div class="corner-image right">
+    <img id="image3" src="{% static 'images/confetti.jpg' %}" alt="Right Image 1">
+    <img id="image4" src="{% static 'images/confetti2.jpg' %}" alt="Right Image 2">
+</div>
+
+<div class="home_container">
+    <h2>Welcome to the NOLA visitor home page!</h2>
+    <p>Please explore this site to learn more about New Orleans and it's amazing culture!</p>
+</div>
+{% endblock %}

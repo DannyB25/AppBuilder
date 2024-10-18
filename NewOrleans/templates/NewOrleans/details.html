@@ -1,0 +1,17 @@
+{% extends 'NewOrleans/base.html' %}
+
+{% block title %}Details{% endblock %}
+
+{% block content %}
+    <div class="details_container">
+        <h1>A Closer Look</h1>
+        <h4>User: {{ more.f_name }} {{ more.l_name }}</h4>
+        <p>Location: {{ more.location }}</p>
+        <p>Comments: {{ more.comments }}</p>
+        <p>Date: {{ more.created_at }}</p>
+        <a href="{% url 'edit' pk=more.pk %}" class="btn btn-primary">Edit Page</a>
+        <a href="{% url 'retro' %}" class="btn btn-primary">Back to Retrospective</a>
+    </div>
+
+
+{% endblock %}

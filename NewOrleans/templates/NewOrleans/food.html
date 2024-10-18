@@ -1,0 +1,72 @@
+{% extends 'NewOrleans/base.html' %}
+{% load static %}
+
+{% block title %}Hospitality{% endblock %}
+
+{% block body_class %}food_body{% endblock %}
+
+{% block content %}
+<div class="food_container">
+    <h2>Welcome to the Hospitality Page!</h2>
+
+    <p>
+        On this webpage, we will explore a few of the popular New Orleans restaurants and haunts where you can find some of the best
+        eats and drinks in the country! Please read through to find some spots you won't want to miss on your
+        next trip to The Big Easy!
+    </p>
+
+    <h3>Buffa's Lounge</h3>
+
+    <img src="{% static 'images/buffas.jpg' %}" alt="Buffa's" id="food_pic" >
+
+    <p>
+        "On the Border of the Quarter since 1939, Buffa's is the best place you've never been.
+        The front bar is open 11AM to close, with additional seating outdoors and in our Back Room as
+        needed. We have live music in our Back Room Thursday thru Monday. See our
+        <a href="https://www.buffasbar.com/">website</a> for details."
+    </p>
+
+    <img src="{% static 'images/break.png' %}" alt="Line Break" id="break" >
+
+    <h3>Commander's Palace</h3>
+
+    <img src="{% static 'images/commander.jpg' %}" alt="Commander's Palace" id="food_pic1" >
+
+    <p>
+        "Commander's Palace, nestled in the middle of the tree-lined Garden District, has been a New Orleans
+        landmark since 1893. Known for the award-winning quality of its food and its convivial atmosphere,
+        the history of this famous restaurant offers a glimpse into New Orleans' storied past and has been
+        the go-to destination for Haute Creole cuisine and whimsical Louisiana charm. The winner of seven
+        James Beard Foundation Awards, Commander's Palace has evolved into a culinary legend." For more
+        information, please visit their website <a href="https://www.commanderspalace.com/">here</a>.
+    </p>
+
+    <img src="{% static 'images/break.png' %}" alt="Line Break" id="break" >
+
+    <h3>Ms. Mae's</h3>
+
+    <img src="{% static 'images/mae.jpg' %}" alt="Ms. Mae's" id="food_pic2" >
+
+    <p>
+        "The Club Ms. Mae's is famously known as New Orleans' cheapest, 24-hour dive bar. It's a hole in
+        the wall spot, but most locals say Ms. Mae's should be on everyone's bucket list. Located at the
+        intersection of Magazine Street and Napoleon Avenue, you can stop in for a drink and a game of pool
+        or air hockey any time of day (literally, anytime). If you're feeling extra adventurous and fall
+        head-over-heels in love with the place, Ms. Mae's dares customers to complete the 24-hour challenge
+        where bar goers must have a drink every hour, for a 24-hour stint!" To learn more, follow the link
+        <a href="https://www.neworleans.com/listing/the-club-ms-maes/33730/">here</a>.
+    </p>
+
+    <img src="{% static 'images/break.png' %}" alt="Line Break" id="break" >
+
+    <p>
+        If you are still hungry for more, travel to this
+        <a href="https://nola.eater.com/maps/best-restaurants-new-orleans-38-map-nola">link</a> for details on the
+        best restaurants in New Orleans. If you are thirsty for a drink, click on
+        <a href="https://nola.eater.com/maps/new-orleans-best-bars-new-orleans-nola">this</a> to find out where
+        to get a great cocktail and a great time.
+    </p>
+
+
+</div>
+{% endblock %}
