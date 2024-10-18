@@ -1,2 +1,3 @@
-# AppBuilder
- An application to educate users on a plethora of interests
+# AppBuilder Live Project
+
+This was a group live project enacted through the Project Management style of Agile and Scrum. We were directed to create dynamic websites on different subjects of interests, so that a user could immerse themselves in a topic and hopefully, become a fan of the topic themselves. Included in these websites are an interactive section where the user, if familiar, can submit their own impression or ideas on a topic, which would be entered into a database for other visitors to see. This way, whenever a user visited the site, they could get a deeper level of understanding on the subject from those with first hand knowledge. We accomplished these goals through the Python framework Django, SQLite, CSS, Javascript, HTML and more! The attached code here is the code I imparted on the project. Please dive in to find some interesting and useful code!
